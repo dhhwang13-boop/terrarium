@@ -549,7 +549,7 @@ html:not(.m) .brand .kname{display:none}
 .ccls5{grid-template-columns:repeat(5,1fr)}
 .clsel button{min-width:0}.clsel button span{min-width:0;word-break:keep-all}
 .cclhero{grid-template-columns:1fr}
-@media (max-width:760px){.ccls5{grid-template-columns:repeat(2,1fr)}.clsel button img{width:30px;height:auto}.clpc{grid-template-columns:1fr}.clsimb{margin-left:0}}
+@media (max-width:760px){.clhero{grid-template-columns:76px minmax(0,1fr);justify-items:stretch;text-align:left;gap:12px;align-items:start}.cclhero{grid-template-columns:1fr}.clart{width:76px;height:100px}.clart img{height:90px}.clhero .title{font-size:24px}.clshead{flex-wrap:wrap}.ccls5{grid-template-columns:repeat(2,1fr)}.clsel button img{width:30px;height:auto}.clpc{grid-template-columns:1fr}.clsimb{margin-left:0}}
 /* 화면 모드 선택 (데스크톱 / 모바일) */
 .vmbtn{font:inherit;font-size:12.5px;font-weight:700;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer;white-space:nowrap}
 .vmbtn:hover{border-color:var(--gold)}
@@ -697,6 +697,12 @@ html.m .flow .fst{grid-column:1/-1;margin-left:-22px}
 html.m .flow .fcol[data-l^="클래스"],html.m .flow .fcol[data-l="NPC"]{grid-column:1/-1}
 html.m .flow .fhm{margin-left:22px}
 html.m .cfgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+html.m .clhero{grid-template-columns:76px minmax(0,1fr);justify-items:stretch;text-align:left;gap:12px;align-items:start}
+html.m .cclhero{grid-template-columns:1fr}
+html.m .clart{width:76px;height:100px}
+html.m .clart img{height:90px}
+html.m .clhero .title{font-size:24px}
+html.m .clshead{flex-wrap:wrap}
 html.m .ccls5{grid-template-columns:repeat(2,1fr)}
 html.m .clsel button img{width:30px;height:auto}
 html.m .clpc{grid-template-columns:1fr}
